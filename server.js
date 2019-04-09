@@ -27,7 +27,7 @@ const setCSP = (req, res, next) => {
 // Middlewares
 app.use(bodyParser.json())
 app.use(logRequests)
-app.use(setCSP)
+// app.use(setCSP)
 app.use(express.static(__dirname + '/static'));
 
 // Methods

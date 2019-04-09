@@ -1,5 +1,7 @@
 export const formTest = () => {
   // See https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#Security_considerations for good examples on how to test nonces
+
+  // Or try this: <img src='x' onerror='fetch("http://www.google.com")'>
   let data = document.querySelector('.formInput').value
   data = JSON.stringify({
     postData: data,
